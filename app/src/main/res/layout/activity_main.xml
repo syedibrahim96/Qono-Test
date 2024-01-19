@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainviewheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="@color/purple_200"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/latvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <TextView
+            android:id="@+id/longvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <TextView
+            android:id="@+id/datevalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateandTime"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_data"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mainviewheader"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/coordinates_item" />
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/latvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="latitude"
+       android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <TextView
+        android:id="@+id/longvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="longitude"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <TextView
+        android:id="@+id/datevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+</LinearLayout>
+
+
+</LinearLayout>
